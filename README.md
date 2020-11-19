@@ -1,24 +1,67 @@
-# README
+# DB設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## users table
+| Column             | Type                | Options                 |
+|--------------------|---------------------|-------------------------|
+| nick_name          | string              | null: false             |
+| email              | string              | null: false             |
+| password           | string              | null: false             |
+| last_name          | string              | null: false             |
+| first_name         | string              | null: false             |
+| last_name_kana     | string              | null: false             |
+| first_name_kana    | string              | null: false             |
+| date_of_birth      | date                | null: false             |
 
-Things you may want to cover:
+### Association
 
-* Ruby version
+- has_many :items
+- has_many :orders
+- belongs_to :deliverys
 
-* System dependencies
+## item table
+| Column             | Type                | Options                 |
+|--------------------|---------------------|-------------------------|
+| item_name          | string              | null: false             |
+| item_text          | string              | null: false             |
+| category           | string              | null: false             |
+| usage              | string              | null: false             |
+| delivery           | string              | null: false             |
+| before_delivery    | string              | null: false             |
+| delivery_day       | string              | null: false             |
+| price              | integer             | null:false              |
+| nick_name          | references          | foreign_key: true       |
 
-* Configuration
+### Association
 
-* Database creation
+- belongs_to :users
+- belongs_to :orders
 
-* Database initialization
+## orders
+| Column             | Type                | Options                 |
+|--------------------|---------------------|-------------------------|
+| zip                | string              | null: false             |
+| after_delivery     | string              | null: false             |
+| city               | string              | null: false             |
+| address            | string              | null: false             |
+| building           | string              |                         |
+| phone_num          | string              | null: false             |
+| nick_name          | references          | foreign_key: true       |
 
-* How to run the test suite
+### Association
 
-* Services (job queues, cache servers, search engines, etc.)
+- belongs_to :users
+- belongs_to :items
+- has_one :deliverys
 
-* Deployment instructions
+## deliverys
+| Column             | Type                | Options                 |
+|--------------------|---------------------|-------------------------|
+| after_delivery     | references          | foreign_key: true       |
+| city               | references          | foreign_key: true       |
+| address            | references          | foreign_key: true       |
+| building           | references          | foreign_key: true       |
+| nick_name          | references          | foreign_key: true       |
 
-* ...
+
+### Association
+
