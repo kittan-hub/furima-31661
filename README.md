@@ -1,6 +1,7 @@
 # DB設計
 
 ## users table
+
 | Column             | Type                | Options                 |
 |--------------------|---------------------|-------------------------|
 | nick_name          | string              | null: false             |
@@ -19,6 +20,7 @@
 - belongs_to :deliverys
 
 ## item table
+
 | Column             | Type                | Options                 |
 |--------------------|---------------------|-------------------------|
 | item_name          | string              | null: false             |
@@ -37,6 +39,7 @@
 - belongs_to :orders
 
 ## orders
+
 | Column             | Type                | Options                 |
 |--------------------|---------------------|-------------------------|
 | zip                | string              | null: false             |
@@ -54,6 +57,7 @@
 - has_one :deliverys
 
 ## deliverys
+
 | Column             | Type                | Options                 |
 |--------------------|---------------------|-------------------------|
 | after_delivery     | references          | foreign_key: true       |
@@ -65,3 +69,5 @@
 
 ### Association
 
+- belongs_to :users
+- belongs_to :orders
