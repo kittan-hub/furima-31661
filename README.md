@@ -23,13 +23,14 @@
 | Column               | Type                | Options                 |
 |----------------------|---------------------|-------------------------|
 | name                 | string              | null: false             |
-| text                 | string              | null: false             |
+| text                 | text                | null: false             |
 | category_id          | integer             | null: false             |
 | usage_id             | integer             | null: false             |
 | delivery_fee_id      | integer             | null: false             |
 | before_prefecture_id | integer             | null: false             |
 | delivery_day_id      | integer             | null: false             |
 | price                | integer             | null:false              |
+| user                 | references          | foreign_key: true       |
 
 ### Association
 
@@ -54,11 +55,12 @@
 | Column             | Type                | Options                 |
 |--------------------|---------------------|-------------------------|
 | postal_code        | string              | null: false             |
-| after_delivery     | string              | null: false             |
+| after_prefecture   | integer             | null: false             |
 | city               | string              | null: false             |
 | house_number       | string              | null: false             |
 | building_name      | string              |                         |
 | phone_num          | string              | null: false             |
+| buy                | references          | foreign_key :true       |
 
 
 
