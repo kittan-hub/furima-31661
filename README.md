@@ -16,7 +16,7 @@
 ### Association
 
 - has_many :items
-- has_many :orders
+- has_many :buys
 
 ## item table
 
@@ -34,14 +34,14 @@
 ### Association
 
 - belongs_to :user
-- has_one :order
+- has_one :buy
 
-## orders table
+## buys table
 
 | Column             | Type                | Options                 |
 |--------------------|---------------------|-------------------------|
-| nick_name          | references          | foreign_key: true       |
-| name               | references          | foreign_key: true       |
+| user               | references          | foreign_key: true       |
+| item               | references          | foreign_key: true       |
 
 ### Association
 
@@ -64,4 +64,4 @@
 
 ### Association
 
-- belongs_to :order
+- belongs_to :buy
