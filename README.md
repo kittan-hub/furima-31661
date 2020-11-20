@@ -40,8 +40,8 @@
 
 | Column             | Type                | Options                 |
 |--------------------|---------------------|-------------------------|
-| nick_name_id       | references          | foreign_key: true       |
-| nick_name_id       | references          | foreign_key: true       |
+| nick_name          | references          | foreign_key: true       |
+| name               | references          | foreign_key: true       |
 
 ### Association
 
