@@ -1,4 +1,4 @@
-<mxfile host="65bd71144e" modified="2020-11-21T03:39:31.152Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.50.1 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36" etag="a6k_LcCwhIddFZz4qAuM" version="13.6.5">
+<mxfile host="65bd71144e" modified="2020-11-21T05:59:36.989Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.50.1 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36" etag="0PY25kYeEFq0wrKmo8-C" version="13.6.5">
     <diagram id="0W38vJm-rNa2hDeHWIhZ" name="ページ1">
         <mxGraphModel dx="575" dy="708" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
@@ -13,7 +13,7 @@
                 <mxCell id="5" value="ユーザー情報 users" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="70" y="90" width="240" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="nick_name&amp;nbsp; (string型, NOT NULL)&lt;br style=&quot;font-size: 16px&quot;&gt;email&amp;nbsp; (string型, NOT NULL)&lt;br style=&quot;font-size: 16px&quot;&gt;password&amp;nbsp; (string型, NOT NULL)&lt;br style=&quot;font-size: 16px&quot;&gt;last_name&amp;nbsp; (string型, NOT NULL)&lt;br style=&quot;font-size: 16px&quot;&gt;first_name&amp;nbsp; (string型, NOT NULL)&lt;br&gt;last_name_reading&amp;nbsp; (string型, NOT NULL)&lt;br style=&quot;font-size: 16px&quot;&gt;first_name_reading&amp;nbsp; (string型, NOT NULL)&lt;br style=&quot;font-size: 16px&quot;&gt;date_of_birth&amp;nbsp; (date型, NOT NULL)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+                <mxCell id="8" value="nick_name&amp;nbsp; (string型, NOT NULL)&lt;br style=&quot;font-size: 16px&quot;&gt;email&amp;nbsp; (string型, NOT NULL)&lt;br style=&quot;font-size: 16px&quot;&gt;encrypted password&amp;nbsp; (string型, NOT NULL)&lt;br style=&quot;font-size: 16px&quot;&gt;last_name&amp;nbsp; (string型, NOT NULL)&lt;br style=&quot;font-size: 16px&quot;&gt;first_name&amp;nbsp; (string型, NOT NULL)&lt;br&gt;last_name_reading&amp;nbsp; (string型, NOT NULL)&lt;br style=&quot;font-size: 16px&quot;&gt;first_name_reading&amp;nbsp; (string型, NOT NULL)&lt;br style=&quot;font-size: 16px&quot;&gt;date_of_birth&amp;nbsp; (date型, NOT NULL)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
                     <mxGeometry x="50" y="119" width="360" height="160" as="geometry"/>
                 </mxCell>
                 <mxCell id="10" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
